@@ -1,0 +1,9 @@
+****************************** ACCESS MODIFIERS USE CASES ******************************
+
+                                        PRIVATE     PUBLIC      PROTECTED       DEFAULT
+
+Same class                                 Yes        Yes          Yes            Yes
+Same Package subclass                      No         Yes          Yes            Yes
+Same Package non-subclass                  No         Yes          Yes            Yes
+Different Package subclass                 No         Yes          Yes            No
+Different Package non-subclass             No         Yes          No             No
