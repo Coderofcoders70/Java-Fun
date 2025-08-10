@@ -264,7 +264,8 @@
 //         System.out.println(nums);
 //     }
 // }
-// *************************** SORTING USING LIST WITH COMPARATOR ************************
+// ************** SORTING THE LENGTH OF THE STRING USING LIST WITH COMPARATOR *************
+
 // Sorting the list according to the length of the string
 
 // import java.util.ArrayList;
