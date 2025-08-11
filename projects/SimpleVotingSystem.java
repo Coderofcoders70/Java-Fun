@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class SimpleVotingSystem {
@@ -17,16 +15,25 @@ public class SimpleVotingSystem {
         c = sc.nextLine().charAt(0);
         if(c == 'c' || c == 'C')
         {   
-            System.out.println("Do you want to add your name ?");
+            System.out.println("Do you want to add your name to be candidate?");
             System.out.println("Enter your name: ");
             for(int i = 0; i < cand.length; i++)
             {
-                String input = sc.nextLine();
+                cand[i] = sc.nextLine();
+                System.out.println("Your name added successfully");
+                System.out.println("\nDo you want to add more name then type Y else N to exit ?");
+                System.out.print("Type here: ");
+                c = sc.nextLine().charAt(0);
+                if (c == 'y' || c == 'Y') {
+                    cand[i] = sc.nextLine();
+                    System.out.println("Your name added successfully");
+                }
+                else{
+                    break;
+                }
             }
-            
-            System.out.println("Our promising Leaders names are:-");
-            System.out.println(cand);
-            System.out.println("Your name added successfully");
+
+            System.out.print("We welcome "+cand[0]+" as our new candidate");
         }
         else if(c == 'v' || c == 'V')
         {
